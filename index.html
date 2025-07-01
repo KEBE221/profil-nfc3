@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>COM'FORT | Abdourahmane Diallo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #005670, #f15a24);
+      color: white;
+      min-height: 100vh;
+      margin: 0;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      width: 110px;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 6px 10px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin: 100px auto 1rem;
+      display: block;
+    }
+
+    h1, h4 {
+      text-align: center;
+      margin: 0.2rem 0;
+    }
+
+    .description {
+      max-width: 90vw;
+      font-size: 1.1rem;
+      margin: 0.5rem auto 1.5rem;
+      text-align: center;
+    }
+
+    .btn-contact {
+      background: white;
+      color: #005670;
+      font-weight: bold;
+      margin: 1rem auto;
+      display: block;
+      max-width: 200px;
+      border-radius: 6px;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      text-align: center;
+    }
+
+    .carousel {
+      max-width: 95vw;
+      margin: 1.5rem auto 2rem;
+    }
+
+    .carousel-inner {
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: 75vh;
+      object-fit: cover;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1);
+    }
+
+    .social-icons {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      margin: 0 15px;
+      color: white;
+      transition: transform 0.2s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    @media (min-width: 600px) {
+      .avatar {
+        width: 150px;
+        height: 150px;
+      }
+      .description {
+        max-width: 600px;
+      }
+      .logo {
+        width: 130px;
+        padding: 8px 12px;
+      }
+      .carousel-inner img {
+        height: 480px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="LOGO_COM4FORT.png" alt="Logo COMFORT" class="logo" />
+
+  <img src="avatar.jpg" alt="Avatar Abdourahmane Diallo" class="avatar" />
+
+  <h1>Abdourahmane Diallo</h1>
+  <h4>Directeur Général – COM'FORT</h4>
+
+  <p class="description">
+    Expert en communication visuelle et digitale, j’accompagne les entreprises pour booster leur visibilité grâce à des stratégies innovantes et des contenus percutants.
+  </p>
+
+  <a href="contact.vcf" class="btn-contact" download>📇 Ajouter Contact</a>
+
+  <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="produit1.jpg" alt="Produit 1" />
+      </div>
+      <div class="carousel-item">
+        <img src="produit2.jpg" alt="Produit 2" />
+      </div>
+      <div class="carousel-item">
+        <img src="produit3.jpg" alt="Produit 3" />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Précédent</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Suivant</span>
+    </button>
+  </div>
+
+  <!-- Réseaux sociaux -->
+  <div class="social-icons">
+    <a href="https://www.facebook.com/tonprofil" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+    <a href="https://www.instagram.com/tonprofil" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+    <a href="https://www.tiktok.com/@tonprofil" target="_blank"><i class="fab fa-tiktok fa-2x"></i></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
